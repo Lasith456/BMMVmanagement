@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+    /* Set background properties */
+    background-image: url('../images/bg.jpeg');
+    background-size: cover; /* Scale the image to cover the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.head1 span {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://dl.dropbox.com/s/r2s8s2r17wi0xm6/flame.png?dl=0");
+    background-position: 0 -1000px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fire 4s linear infinite;
+  }
+  
+  .head1 {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+  }
+  
+  @keyframes fire {
+    0% {
+      background-position: 0% -50%;
+    }
+    100% {
+      background-position: 0% -25%;
+    }
+  }
+  .container{
+    display: flex;
+    gap: 32px;
+  }
+  
+  .btn:any-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: dashed 1px #fff;
+    transition: all 300ms ease-out;
+  }
+  
+  .btn:hover,
+  .btn:active{
+    background: rgb(8, 102, 71, 0.15);
+    color: #46EBB4;
+    border-color: #46EBB4;
+    border-style: solid;
+  }
+/* Sports Over layer */
+  .overlaySport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.overlaySport-content {
+    width: 100%;
+    height: 100%;
+    background-color: #000000db;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+/* Students Over layer */
+.overlayStudents {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.overlayStudents-content {
+    width: 100%;
+    height: 100%;
+    background-color: #000000db;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+/* Login Over layer */
+.overlayLoging {
+    position: fixed;
+    top: 14%;
+    left: 25%;
+    width: 100%;
+    height: 125%;
+    display: none;
+}
+.overlayLoging-content {
+    width: 50%;
+    height: 50%;
+    color: aliceblue;
+    background-color: #000000db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
